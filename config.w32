@@ -1,7 +1,0 @@
-ARG_ENABLE('tapkee', 'tapkee support', 'no');
-
-if (PHP_TAPKEE != 'no') {
-	AC_DEFINE('HAVE_TAPKEE', 1, 'tapkee support enabled');
-
-	EXTENSION('tapkee', 'tapkee.c', null, '/DZEND_ENABLE_STATIC_TSRMLS_CACHE=1');
-}
